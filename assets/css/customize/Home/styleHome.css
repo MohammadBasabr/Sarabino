@@ -15,7 +15,7 @@ body {
 /* nav */
 .snavbar {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 9px 30px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    top:0;
+    top: 0;
     background-color: turquoise;
     z-index: 10;
 }
@@ -102,4 +102,17 @@ button:focus:not(:focus-visible) {
     outline: none;
 }
 
-/*  */
+/* ourNavs */
+.ourNavs {
+    width: 10rem;
+    height: 10rem;
+    background: rgba(255, 255, 255, 0.305);
+    border-radius: 50%;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: rgba(255, 255, 255, 0) 0.2em solid;
+}
+
+.ourNavs:hover {
+    border: rgb(240, 0, 0) 0.2em solid;
+}
