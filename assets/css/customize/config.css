@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("../font/Vazirmatn[wght].woff2") format("woff2 supports variations"),
+        url("../font/Vazirmatn[wght].woff2") format("woff2-variations");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: "Vazirmatn";
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
