@@ -1,5 +1,5 @@
 body {
-    background-color: turquoise;
+    background-color: #e2e8e8;
 }
 
 /* stick */
@@ -115,4 +115,12 @@ button:focus:not(:focus-visible) {
 
 .ourNavs:hover {
     border: rgb(240, 0, 0) 0.2em solid;
+}
+
+.owl-carousel div img {
+    border-radius: 50px !important;
+}
+
+.owl-carousel div {
+    border-radius: 50px ;
 }
