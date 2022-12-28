@@ -12,8 +12,8 @@
     <!-- lbr -->
     <link rel="stylesheet" href="../assets/css/bootStrap/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/css/slider/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/css/slider/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/css/owlcarousel2/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owlcarousel2/owl.theme.default.min.css">
     <!-- custom -->
     <link rel="stylesheet" href="../assets/css/customize/config.css">
     <link rel="stylesheet" href="../assets/css/customize/Home/styleHome.css">
@@ -21,54 +21,63 @@
     <link rel="stylesheet" media="screen and (max-width:575px)" href="../assets/css/customize/Home/mobile.css">
     <!-- scripts -->
     <script src="../assets/js/jquery/jquery.min.js"></script>
-    <script src="../assets/js/slider/owl.carousel.min.js"></script>
+    <script src="../assets/js/owlcarousel2/owl.carousel.min.js"></script>
     <script>
+        //     $(document).ready(function () {
+        //         $(".owl1").owlCarousel({
+        //             loop: true,
+        //             rtl: true,
+
+        //             autoplay: true,
+        //             autoplayTimeout: 2000,
+        //             margin:10,
+        //             autoplayHoverPause: true,
+        //             responsiveClass:true,
+        // responsive:{
+        //     0:{
+        //         items:1,
+        //         nav:true
+        //     },
+        //     600:{
+        //         items:3,
+        //         nav:false
+        //     },
+        //     1000:{
+        //         items:4,
+        //         nav:true,
+
+        //     }
+        // }
+        //         });
+        //     });
         $(document).ready(function () {
-            $(".owl1").owlCarousel({
+            $(".owl-carousel").owlCarousel({
+
                 loop: true,
-                rtl: true,
-                items: 1,
+                margin: 20,
+                responsiveClass: true,
+                nav: false,
                 autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+
+                    },
+                    600: {
+                        items: 2,
+
+                    },
+                    1000: {
+                        items: 3,
+
+                    }
+                }
+
             });
         });
-        $(document).ready(function () {
-            $(".owl2").owlCarousel({
-                loop: true,
-                rtl: true,
-                items: 1,
-                autoplay: true,
-                autoplayTimeout: 1000,
-                autoplayHoverPause: true
-            });
-        });
-        $(document).ready(function () {
-            $(".owl3").owlCarousel({
-                center: true,
-                // margin:1,
-                items: 4,
-                margin: 100,
-                loop: true,
-                rtl: true,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-            });
-        });
-        $(document).ready(function () {
-            $(".owl4").owlCarousel({
-                center: true,
-                // margin:1,
-                items: 4,
-                margin: 100,
-                loop: true,
-                rtl: true,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-            });
-        });
+
     </script>
 </head>
 
@@ -137,105 +146,129 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <div class="owl-carousel owl1 owl-theme">
-                        <img src="../assets/files/images/pholder.png" alt="">
-                        <img src="../assets/files/images/pholder.png" alt="">
-                        <img src="../assets/files/images/pholder.png" alt="">
+                <div class="col-12">
+                    <div class="owl-carousel" style="direction: ltr;">
+
+                        <div> <img  src="../assets/files/images/pholder.png" alt=""></div>
+                        <div> <img src="../assets/files/images/pholder.png" alt=""></div>
+                        <div><img src="../assets/files/images/pholder.png" alt=""></div>
+                        <div><img src="../assets/files/images/pholder.png" alt=""></div>
+                        <div><img src="../assets/files/images/pholder.png" alt=""></div>
+
+
+
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="owl-carousel owl2 owl-theme">
-                        <img src="../assets/files/images/pholder.png" alt="">
-                        <img src="../assets/files/images/pholder.png" alt="">
-                        <img src="../assets/files/images/pholder.png" alt="">
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="container mt-5">
-        <h3>برگزیدۀ بخش املاک</h3>
-        <div class="owl-carousel owl3 owl-theme mt-4">
-            <div class="card  bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر ملک">
-                <div class="card-body">
-                    <p class="card-text">ملک شماره 1</p>
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel " style="direction: ltr;">
+                        <div class="card  bg-light" style="">
+                            <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid"
+                                style="max-height: 200px;" alt="تصویر ملک">
+                            <div class="card-body">
+                                <p class="card-text">ملک شماره 1</p>
+                            </div>
+                        </div>
+                        <div class="card  bg-light" style="">
+                            <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid"
+                                style="max-height: 200px;" alt="تصویر ملک">
+                            <div class="card-body">
+                                <p class="card-text">ملک شماره 1</p>
+                            </div>
+                        </div>
+                        <div class="card  bg-light" style="">
+                            <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid"
+                                style="max-height: 200px;" alt="تصویر ملک">
+                            <div class="card-body">
+                                <p class="card-text">ملک شماره 1</p>
+                            </div>
+                        </div>
+                        <div class="card  bg-light" style="">
+                            <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid"
+                                style="max-height: 200px;" alt="تصویر ملک">
+                            <div class="card-body">
+                                <p class="card-text">ملک شماره 1</p>
+                            </div>
+                        </div>
+                        <div class="card  bg-light" style="">
+                            <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid"
+                                style="max-height: 200px;" alt="تصویر ملک">
+                            <div class="card-body">
+                                <p class="card-text">ملک شماره 1</p>
+                            </div>
+                        </div>
+                        <div class="card  bg-light" style="">
+                            <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid"
+                                style="max-height: 200px;" alt="تصویر ملک">
+                            <div class="card-body">
+                                <p class="card-text">ملک شماره 1</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card  bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر ملک">
-                <div class="card-body">
-                    <p class="card-text">ملک شماره 2</p>
-                </div>
-            </div>
-            <div class="card  bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر ملک">
-                <div class="card-body">
-                    <p class="card-text">ملک شماره 3</p>
-                </div>
-            </div>
-            <div class="card  bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر ملک">
-                <div class="card-body">
-                    <p class="card-text">ملک شماره 4</p>
-                </div>
-            </div>
-            <div class="card  bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر ملک">
-                <div class="card-body">
-                    <p class="card-text">ملک شماره 5</p>
-                </div>
-            </div>
-
         </div>
+
     </section>
 
-    <section class="container mb-5">
-        <h3>برگزیدۀ بخش اخبار</h3>
-        <div class="owl-carousel owl4 owl-theme">
-            <div class="card bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر خبر">
-                <div class="card-body">
-                    <p class="card-text">خبر شماره 1</p>
-                </div>
-            </div>
-            <div class="card bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر خبر">
-                <div class="card-body">
-                    <p class="card-text">خبر شماره 2</p>
-                </div>
-            </div>
-            <div class="card bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر خبر">
-                <div class="card-body">
-                    <p class="card-text">خبر شماره 3</p>
-                </div>
-            </div>
-            <div class="card bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر خبر">
-                <div class="card-body">
-                    <p class="card-text">خبر شماره 4</p>
-                </div>
-            </div>
-            <div class="card bg-light" style="width: 18rem;">
-                <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
-                    alt="تصویر خبر">
-                <div class="card-body">
-                    <p class="card-text">خبر شماره 5</p>
+
+
+    <section class=" mb-5">
+        <h3 style="text-align: center;">برگزیدۀ بخش اخبار</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <div class="owl-carousel" style="direction: ltr;">
+                        <div class="card bg-light" >
+                            <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
+                                alt="تصویر خبر">
+                            <div class="card-body">
+                                <p class="card-text">خبر شماره 1</p>
+                            </div>
+                        </div>
+                        <div class="card bg-light" >
+                            <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
+                                alt="تصویر خبر">
+                            <div class="card-body">
+                                <p class="card-text">خبر شماره 2</p>
+                            </div>
+                        </div>
+                        <div class="card bg-light" >
+                            <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
+                                alt="تصویر خبر">
+                            <div class="card-body">
+                                <p class="card-text">خبر شماره 3</p>
+                            </div>
+                        </div>
+                        <div class="card bg-light" >
+                            <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
+                                alt="تصویر خبر">
+                            <div class="card-body">
+                                <p class="card-text">خبر شماره 4</p>
+                            </div>
+                        </div>
+                        <div class="card bg-light" >
+                            <img src="../assets/files/images/svg/news.svg" class="card-img-top img-fluid" style="max-height: 200px;"
+                                alt="تصویر خبر">
+                            <div class="card-body">
+                                <p class="card-text">خبر شماره 5</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+        
+        
     </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 129">
         <defs>
@@ -381,3 +414,31 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card  bg-light" style="">
+    <img src="../assets/files/images/svg/home.svg" class="card-img-top img-fluid" style="max-height: 200px;"
+        alt="تصویر ملک">
+    <div class="card-body">
+        <p class="card-text">ملک شماره 1</p>
+    </div>
+</div>
