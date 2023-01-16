@@ -1,0 +1,50 @@
+:root {
+    --background-1: #3C4245;
+    --background-2: #1abc9c;
+    --background-3: #DFCDC3;
+    --background-4: #bdc3c7;
+    --background-5: #2c3e50;
+    --background-6: #16a085;
+    --background-7: #ecf0f1;
+    --section-1: #719192;
+    --section-2: #5F6769;
+}
+
+body{
+    background-color: var(--background-2);
+    user-select: none;
+}
+
+nav{
+    background-color: var(--background-7);
+    z-index: 10;
+}
+
+ul{
+    margin: 0;
+}
+
+.link{
+    background-color: var(--background-2);
+}
+
+.content{
+    background-color: var(--background-7);
+    height: 100%;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sec{
+    background-color: var(--background-2);
+}
+
+.services-btn a{
+    place-self: center;
+    cursor: pointer;
+}
