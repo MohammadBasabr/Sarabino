@@ -40,6 +40,10 @@ ul{
     justify-content: flex-start;
 }
 
+.sec-title i{
+    font-size: 3rem;
+}
+
 .sec{
     background-color: var(--background-2);
 }
@@ -47,4 +51,9 @@ ul{
 .services-btn a{
     place-self: center;
     cursor: pointer;
+}
+
+.services-btn i{
+    font-size: 4rem;
+    color: var(--background-2);
 }
